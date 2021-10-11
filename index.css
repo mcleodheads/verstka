@@ -206,7 +206,14 @@ body {
         grid-template-columns: 100px 100px 100px 100px;
         grid-template-rows: 500px;
     }
+    .addToCart {
+        cursor: pointer;
 
+    }
+    .payment_addToCart {
+        margin-left: 150px;
+        cursor: pointer;
+    }
     .content_about {
         width: 100vw;
         position: relative;
@@ -346,7 +353,7 @@ body {
         width: 95%;
     }
     .authors_photo {
-        display: none;
+        position: static;
     }
     .about_header {
         position: relative;
@@ -359,10 +366,15 @@ body {
     }
 }
 
+@media (max-width: 1300px) {
+    .authors_photo {
+        display: none;
+    }
+}
 
-@media (max-width: 1044px) {
+@media (max-width: 1100px) {
     .wrapper {
-        max-width: 1044px;
+        max-width: 1100px;
     }
 
     .header {
@@ -441,6 +453,7 @@ body {
 
     .payment_addToCart {
         margin-left: 150px;
+        cursor: pointer;
     }
 
     .sales_header {
@@ -778,6 +791,8 @@ body {
     font-size: 230px;
     color: #515076;
     line-height: 213px;
+    position: relative;
+    z-index: -1;
 }
 
 .home_content {
@@ -875,7 +890,7 @@ body {
     outline: none;
     border: none;
     padding: 27px 35px 27px 35px;
-
+    cursor: pointer;
 }
 
 .btn_inner {
@@ -1003,7 +1018,7 @@ body {
 
 .slider_btn {
     margin-top: 50px;
-
+    cursor: pointer;
     border: 1px solid #888794;
     box-sizing: border-box;
     border-radius: 50%;
@@ -1020,6 +1035,7 @@ body {
 }
 
 .slider_prev {
+    cursor: not-allowed;
     opacity: .5;
 }
 
@@ -1027,6 +1043,11 @@ body {
     position: absolute;
     left: 0;
     top: 2800px;
+    z-index: -100;
+}
+
+.item_action {
+    cursor: pointer;
 }
 
 .sales_wrapperSlider {
@@ -1075,6 +1096,14 @@ body {
     border-radius: 50%;
     width: 62px;
     height: 62px;
+}
+
+.social_ig {
+    cursor: pointer;
+}
+
+.social_fb {
+    cursor: pointer;
 }
 
 .sliderInfo_header {
