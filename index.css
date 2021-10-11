@@ -345,6 +345,18 @@ body {
     .wrapper_content {
         width: 95%;
     }
+    .authors_photo {
+        display: none;
+    }
+    .about_header {
+        position: relative;
+        bottom: 120px;
+        right: 200px;
+        font-size: 280px;
+        line-height: 92.4%;
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 
