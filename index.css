@@ -16,7 +16,7 @@ a {
     max-width: 100%;
 }
 
-.container_header {
+.wrapper_header {
     width: 100%;
     height: 100px;
     background: #EDECF7;
@@ -106,7 +106,7 @@ a {
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.home_imgSeed {
+.home_img_seed {
     background-image: url("./img/bgs/Seed.png");
     background-repeat: no-repeat;
     width: 1451px;
@@ -118,18 +118,18 @@ a {
 }
 
 @media (max-width: 1500px) {
-    .home_imgSeed {
+    .home_img_seed {
 
     }
 }
 
 @media (max-width: 1100px) {
-    .home_imgSeed {
+    .home_img_seed {
 
     }
 }
 
-.home_imgBerries {
+.home_img_berries {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%),
     url("./img/bgs/berries.png") no-repeat;
     position: absolute;
@@ -141,13 +141,13 @@ a {
 }
 
 @media (max-width: 1500px) {
-    .home_imgBerries {
+    .home_img_berries {
 
     }
 }
 
 @media (max-width: 1100px) {
-    .home_imgBerries {
+    .home_img_berries {
 
     }
 }
@@ -174,13 +174,13 @@ a {
     grid-template-rows: 1000px 1fr;
 }
 
-.home_subHeader {
+.home_sub_header {
     font-size: 36px;
     line-height: 132.67%;
     color: #63678C;
 }
 
-.infoBlock_block {
+.infoblock_block {
     font-size: 18px;
     line-height: 170%;
     color: #888794;
@@ -192,7 +192,7 @@ a {
     grid-template-rows: 150px 220px 200px 200px 180px;
 }
 
-.infoBlock_diamaint {
+.infoblock_diamaint {
     font-weight: 500;
     font-size: 18px;
     line-height: 170%;
@@ -208,7 +208,7 @@ a {
     grid-template-rows: 800px 400px;
 }
 
-.infoBlock_star {
+.infoblock_star {
     text-align: end;
     align-content: end;
     width: 100%;
@@ -226,7 +226,7 @@ a {
     flex-direction: column;
 }
 
-.infoBlock_symbolStar {
+.infoblock_symbol_star {
     font-family: Work Sans, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -237,11 +237,11 @@ a {
     color: #888794;
 }
 
-.infoBlock_blockUnderStar {
+.infoblock_block_under_star {
     width: 172px;
 }
 
-.infoBlock_infoBlock5 {
+.infoblock_block5 {
     font-weight: 300;
     font-size: 36px;
     line-height: 109.4%;
@@ -250,13 +250,13 @@ a {
     color: #757AA5;
 }
 
-.home_btnWrapper {
+.home_btn_wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btnWrapper_btn {
+.btn_wrapper_btn {
     background: #515076;
     border-radius: 100px;
     outline: none;
@@ -292,7 +292,7 @@ a {
     }
 }
 
-.products_imgSeeds_group {
+.products_img_seeds_group {
     background-image: url("./img/bgs/SeedsGroup.png");
     background-repeat: no-repeat;
     width: 873px;
@@ -346,7 +346,7 @@ a {
 
 }
 
-.description_skinType {
+.description_skin_type {
     font-weight: 500;
     font-size: 12px;
     line-height: 199.99%;
@@ -413,7 +413,7 @@ a {
     }
 }
 
-.sales_imgVetka {
+.sales_img_vetka {
     background-image: url("./img/bgs/vetka.png");
     background-repeat: no-repeat;
     width: 1015px;
@@ -423,7 +423,7 @@ a {
     z-index: -100;
 }
 
-.salesHeader_wrapper {
+.sales_header_wrapper {
 
 }
 
@@ -459,7 +459,7 @@ a {
     margin-left: 20px;
 }
 
-.sales_wrapperSlider {
+.sales_wrapper_slider {
     height: 521px;
     max-width: 810px;
     background: #F7F7FA;
@@ -468,7 +468,7 @@ a {
     grid-template-columns: 20px 1fr 1fr;
 }
 
-.wrapperSlider_sideString {
+.wrapper_slider_side_string {
     transform: rotate(270deg);
     font-weight: 500;
     font-size: 13px;
@@ -489,7 +489,7 @@ a {
 
 }
 
-.sliderInfo_header {
+.slider_info_header {
     max-width: 337px;
     height: 156px;
     font-weight: 300;
@@ -500,7 +500,7 @@ a {
     color: #4C5072;
 }
 
-.sliderInfo_body {
+.slider_info_body {
     max-width: 433px;
     height: 111px;
     font-weight: 500;
@@ -515,7 +515,7 @@ a {
     align-items: center;
 }
 
-.sliderImg_body {
+.slider_img_body {
     max-width: 100%;
 }
 
@@ -696,7 +696,7 @@ a {
     grid-template-columns: 1.5fr 1fr;
 }
 
-.about_imgFlower {
+.about_img_flower {
     background-image: url("img/bgs/flower.png");
     background-repeat: no-repeat;
     width: 638px;
@@ -707,7 +707,7 @@ a {
 }
 
 @media (max-width: 1920px) {
-    .about_imgFlower {
+    .about_img_flower {
         top: 4800px;
     }
 }
@@ -719,7 +719,7 @@ a {
         grid-template-rows: 1fr 1fr;
     }
 
-    .about_infoBlock {
+    .about_info_block {
         justify-self: center;
         margin-bottom: 30px;
     }
@@ -750,7 +750,7 @@ a {
     .img_woman {
         top: 5350px;
     }
-    .about_imgFlower {
+    .about_img_flower {
         top: 5250px;
         z-index: 1;
     }
@@ -808,21 +808,21 @@ a {
 }
 
 
-.about_infoBlock {
+.about_info_block {
     max-width: 462px;
     position: relative;
     z-index: 10;
 }
 
 @media (max-width: 1200px) {
-    .about_infoBlock {
+    .about_info_block {
         justify-self: center;
         margin-top: 30px;
         margin-bottom: 30px;
     }
 }
 
-.infoBlock_subheader {
+.info_block_subheader {
     font-weight: 500;
     font-size: 16px;
     line-height: 179.99%;
@@ -831,7 +831,7 @@ a {
     color: #A5A3B9;
 }
 
-.infoBlock_header {
+.info_block_header {
     margin-top: 50px;
     font-weight: 300;
     line-height: 109.4%;
@@ -841,11 +841,11 @@ a {
     font-size: 100px;
 }
 
-.infoBlock_header_int {
+.info_block_header_int {
     font-size: 120px;
 }
 
-.infoBlock_info {
+.info_block_info {
     margin-top: 60px;
     font-weight: 500;
     font-size: 16px;
@@ -1063,7 +1063,7 @@ a {
     align-items: flex-start;
 }
 
-.author_symbQuotes {
+.author_symbol_quotes {
     font-family: Circe, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1127,7 +1127,7 @@ width: 186px;
     }
 }
 
-.authors_imgFlowers {
+.authors_img_flowers {
     position: absolute;
     background-image: url("./img/bgs/flowersGroup.png");
     background-repeat: no-repeat;
@@ -1139,7 +1139,7 @@ width: 186px;
     z-index: -2;
 }
 
-.authors_imgHmns {
+.authors_img_ppls {
     position: absolute;
     top: 7175px;
     right: 220px;
@@ -1152,7 +1152,7 @@ width: 186px;
 
 }
 
-.author_photoFone {
+.author_photo_background {
     position: absolute;
     background-image: url("./img/bgs/photoFone.png");
     background-repeat: no-repeat;
