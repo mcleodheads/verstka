@@ -945,19 +945,7 @@ a {
     width: 75%;
 }
 
-@media (max-width: 1500px) {
-    .content_authors {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin :-1px;
-        border: 0;
-        padding: 0;
-        white-space :nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;    }
-}
+
 
 
 
@@ -1059,7 +1047,7 @@ width: 186px;
 
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
     .authors_photo {
         position: absolute;
         width: 1px;
