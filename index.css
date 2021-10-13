@@ -1047,7 +1047,7 @@ width: 186px;
 
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1600px) {
     .authors_photo {
         position: absolute;
         width: 1px;
