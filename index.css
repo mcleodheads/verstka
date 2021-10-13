@@ -130,7 +130,7 @@ a {
 }
 
 .home_imgBerries {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 60%),
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 60%),
     url("./img/bgs/berries.png") no-repeat;
     position: absolute;
     top: 1100px;
