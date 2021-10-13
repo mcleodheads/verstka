@@ -406,11 +406,11 @@ a {
 }
 
 @media (max-width: 1300px) {
-    .sales_header {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-left: 100px;
-    }
+    /*.sales_header {*/
+    /*    grid-template-columns: 1fr;*/
+    /*    grid-template-rows: 1fr 1fr;*/
+    /*    margin-left: 100px;*/
+    /*}*/
 }
 
 .sales_imgVetka {
@@ -464,7 +464,8 @@ a {
     max-width: 810px;
     background: #F7F7FA;
     box-shadow: -40px 40px 0 #515076;
-    display: flex;
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr;
 }
 
 .wrapperSlider_sideString {
@@ -477,8 +478,10 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
     height: 100%;
+    top: 250px;
+    left: 2px;
     position: relative;
-    width: 13px;
+    width: 451px;
 }
 
 .slider_info {
