@@ -324,6 +324,7 @@ a {
     max-width: 330px;
     height: fit-content;
     position: relative;
+    transition: 0.5s;
 }
 
 .slider-btn {
@@ -335,11 +336,12 @@ a {
 
 .example:hover {
     box-shadow: 0 0 20px var(--mainViolett);
-    bottom: 15px;
+    bottom: 5px;
 }
 
 .prod {
     position: relative;
+    transition: 0.5s;
 }
 
 .add-to-cart {
@@ -390,6 +392,10 @@ a {
     font-size: 20px;
     line-height: 135.99%;
     color: #515076;
+}
+
+.payment-add-to-cart {
+    cursor: pointer;
 }
 
 .price-prev {
@@ -914,12 +920,10 @@ a {
     height: 400px;
     background: #F7F7FA;
     box-shadow: 0 -6px 0 #515076;
-    position: relative;
     transition: 1s;
 }
 
 .item:hover {
-    bottom: 15px;
     box-shadow: 0 0 20px var(--mainViolett);
 }
 
@@ -1205,6 +1209,7 @@ width: 186px;
 }
 
 .contacts-social {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1212,4 +1217,9 @@ width: 186px;
 
 .social-ig {
     margin-left: 25px;
+    cursor: pointer;
+}
+
+.social-fb {
+    cursor: pointer;
 }
