@@ -5,6 +5,7 @@
 
 body {
     font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -406,7 +407,7 @@ a {
 .sales_imgVetka {
     background-image: url("./img/bgs/vetka.png");
     background-repeat: no-repeat;
-    width: 1083px;
+    width: 1015px;
     height: 100%;
     position: absolute;
     left: 0;
@@ -500,6 +501,10 @@ a {
 .slider_img {
     display: flex;
     align-items: center;
+}
+
+.sliderImg_body {
+    max-width: 100%;
 }
 
 .sales_products {
@@ -613,8 +618,9 @@ a {
     position: relative;
     top: 230px;
     left: 100px;
-
+    max-width: 100%;
 }
+
 
 .sale3_b3 {
     position: relative;
@@ -677,6 +683,12 @@ a {
     z-index: 2;
 }
 
+@media (max-width: 1500px) {
+    .img_woman {
+        width: 90%;
+    }
+}
+
 .img_blur {
     background-image: url("./img/bgs/blur.png");
     background-repeat: no-repeat;
@@ -686,6 +698,12 @@ a {
     height: 400px;
     width: 1209px;
     z-index: 3;
+}
+
+@media (max-width: 1500px) {
+    .img_blur {
+        width: 90%;
+    }
 }
 
 .img_ellipse {
@@ -751,6 +769,7 @@ a {
 
 .about_imgFlower {
     background-image: url("img/bgs/flower.png");
+    background-repeat: no-repeat;
     width: 638px;
     height: 100%;
     position: absolute;
@@ -884,6 +903,14 @@ a {
     /*position: relative;*/
     /*left: 170px;*/
     /*top: 230px;*/
+    margin-top: 50px;
+}
+@media (max-width: 1100px) {
+    .item2 {
+        margin-top: 0;
+
+    }
+
 }
 
 .item3 {
@@ -892,14 +919,13 @@ a {
     /*left: 530px;*/
     /*top: 120px;*/
 
+
 }
 
 .item4 {
     grid-area: fourth;
-    margin-bottom: 50px;
-    /*position: relative;*/
-    /*right: 100px;*/
-    /*top: 430px;*/
+    margin-bottom: 150px;
+
 }
 
 .content_authors {
@@ -925,7 +951,8 @@ a {
 }
 
 .authors_info {
-
+    display: grid;
+    grid-template-rows: 150px 1fr 200px;
 }
 
 .authors_header {
@@ -940,7 +967,7 @@ a {
 .author_info {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 600px;
 }
 
 .author_name {
@@ -957,6 +984,7 @@ a {
     font-size: 16px;
     line-height: 180%;
     color: #888794;
+    max-width: 665px;
 }
 
 .quote {
@@ -981,11 +1009,14 @@ a {
     line-height: 160%;
     color: #888794;
     margin-left: 40px;
+    max-width: 554px;
 }
 
 .author_slider {
     display: flex;
     margin-top: 75px;
+    max-width: 665px;
+
 }
 
 .author_slider_image1 {
@@ -1010,6 +1041,21 @@ width: 186px;
 
 .authors_photo {
 
+}
+
+@media (max-width: 1600px) {
+    .authors_photo {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 }
 
 .authors_imgFlowers {
@@ -1048,14 +1094,67 @@ width: 186px;
 }
 
 .content_contacts {
-    width: 1920px;
-    height: 874px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .2) 70%, rgba(255, 255, 255, 1) 100%), url('./img/bgs/ireland.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
+    width: 100%;
+    position: relative;
 }
 
 .contacts_bg {
+    width: 1920px;
+    min-width: 100%;
+    height: 874px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2) 70%, rgba(255, 255, 255, 1) 100%), url('./img/bgs/ireland.png');
+    background-repeat: no-repeat;
+    z-index: -100;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
 
+.contacts_info {
+    position: relative;
+    background: #F7F7FA;
+    box-shadow: 0 -6px 0 #515076;
+    max-width: 531px;
+    height: 345px;
+    left: 350px;
+    top: 500px;
+}
+
+.info_body {
+    padding: 50px 20px 65px 80px;
+}
+
+.contacts_header {
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 109.4%;
+    display: flex;
+    align-items: center;
+    color: #757AA5;
+}
+
+.contacts_desc {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 199.99%;
+    color: #828282;
+}
+
+.contacts_phone {
+
+}
+
+.contacts_address {
+    margin-top: 30px;
+}
+
+.contacts_social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social_ig {
+    margin-left: 25px;
 }
