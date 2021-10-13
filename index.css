@@ -130,10 +130,10 @@ a {
 }
 
 .home_imgBerries {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 38%, rgba(255, 255, 255, 0) 60%),
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 60%),
     url("./img/bgs/berries.png") no-repeat;
     position: absolute;
-    top: 1200px;
+    top: 1100px;
     right: 0;
     width: 1583px;
     height: 100%;
@@ -276,7 +276,7 @@ a {
 }
 
 .content_products {
-    margin-top: 490px;
+    margin-top: 200px;
     width: 75%;
 }
 
@@ -382,7 +382,7 @@ a {
 }
 
 .content_sales {
-    margin-top: 490px;
+    margin-top: 250px;
     width: 75%;
 }
 
@@ -405,12 +405,12 @@ a {
     grid-template-rows: 1fr;
 }
 
-@media (max-width: 1300px) {
-    /*.sales_header {*/
-    /*    grid-template-columns: 1fr;*/
-    /*    grid-template-rows: 1fr 1fr;*/
-    /*    margin-left: 100px;*/
-    /*}*/
+@media (max-width: 1400px) {
+    .sales_header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 100px;
+    }
 }
 
 .sales_imgVetka {
@@ -527,17 +527,28 @@ a {
     justify-items: center;
 }
 
+
+
 @media (max-width: 1200px) {
     .content_sales {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .prod {
     height: fit-content;
     max-width: 350px;
-    min-width: 300px;
+    min-width: 50%;
     background: #F7F7FA;
+}
+
+@media (max-width: 1500px) {
+    .prod {
+        max-width: 90%;
+    }
 }
 
 .sale1 {
@@ -644,7 +655,13 @@ a {
     margin-top: 350px;
     width: 100%;
     background: #EDECF6;
-    height: 1023px;
+    height: 1020px;
+}
+
+@media (max-width: 1300px) {
+    .content_about {
+        height: 100%;
+    }
 }
 
 .about_header {
@@ -679,25 +696,63 @@ a {
     grid-template-columns: 1.5fr 1fr;
 }
 
+.about_imgFlower {
+    background-image: url("img/bgs/flower.png");
+    background-repeat: no-repeat;
+    width: 638px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+@media (max-width: 1920px) {
+    .about_imgFlower {
+        top: 4800px;
+    }
+}
+
+    @media (max-width: 1300px) {
+    .about_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about_infoBlock {
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+}
+
 .wrapper_imgs {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+}
+
+@media (max-width: 1300px) {
+    .wrapper_imgs {
+    }
 }
 
 .img_woman {
     background-image: url("./img/bgs/woman.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 5350px;
+    top: 4800px;
     left: 50px;
     height: 700px;
     width: 1014px;
     z-index: 2;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
     .img_woman {
-        width: 90%;
+        top: 5350px;
+    }
+    .about_imgFlower {
+        top: 5450px;
+        z-index: 1;
     }
 }
 
@@ -705,16 +760,16 @@ a {
     background-image: url("./img/bgs/blur.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 5750px;
+    top: 5200px;
     left: 0;
     height: 400px;
     width: 1209px;
     z-index: 3;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
     .img_blur {
-        width: 90%;
+        top: 5750px;
     }
 }
 
@@ -722,23 +777,34 @@ a {
     background-image: url("./img/bgs/Ellipse.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 5350px;
+    top: 4800px;
     left: 120px;
     height: 600px;
     width: 546px;
     z-index: 0;
+}
 
+@media (max-width: 1400px) {
+    .img_ellipse {
+        top: 5350px;
+    }
 }
 
 .img_berries {
     background-image: url("./img/bgs/berries3.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 5850px;
+    top: 5350px;
     left: 650px;
     width: 174px;
     height: 200px;
     z-index: 3;
+}
+
+@media (max-width: 1400px) {
+    .img_berries {
+        top: 5900px;
+    }
 }
 
 
@@ -746,6 +812,14 @@ a {
     max-width: 462px;
     position: relative;
     z-index: 10;
+}
+
+@media (max-width: 1200px) {
+    .about_infoBlock {
+        justify-self: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .infoBlock_subheader {
@@ -779,16 +853,7 @@ a {
     color: #888794;
 }
 
-.about_imgFlower {
-    background-image: url("img/bgs/flower.png");
-    background-repeat: no-repeat;
-    width: 638px;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 5200px;
-    right: 0;
-}
+
 
 .content_useful {
     width: 75%;
