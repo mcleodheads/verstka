@@ -1,3 +1,13 @@
+:root {
+    --header-violet: #EDECF7;
+    --main-violet: #515076;
+    --second-violet: #757AA5;
+    --primary-font-color: #888794;
+    --font-header-color: #63678C;
+    --light-font-color: #F7F7FA;
+    --subheader-font-color: #A5A3B9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-:root {
-    --header-violet: #EDECF7;
-    --main-violet: #515076;
-    --second-violet: #757AA5;
-    --primary-font-color: #888794;
-    --font-header-color: #63678C;
-    --light-font-color: #F7F7FA;
-    --subheader-font-color: #A5A3B9;
-}
 
 a {
     text-decoration: none;
