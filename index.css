@@ -250,14 +250,12 @@ a {
     outline: none;
     border: none;
     display: flex;
-    box-shadow: 0 0 20px var(--mainViolett);
-    text-shadow: 0 0 20px var(--headerViolet);
     transition: 0.2s;
 }
 
 .btn-wrapper-btn:hover {
-    box-shadow: none;
-    text-shadow: none;
+    box-shadow: 0 0 20px var(--mainViolett);
+    text-shadow: 0 0 20px var(--headerViolet);
 }
 
 .btn-inner {
@@ -336,7 +334,6 @@ a {
 
 .example:hover {
     box-shadow: 0 0 20px var(--mainViolett);
-    bottom: 5px;
 }
 
 .prod {
@@ -350,7 +347,6 @@ a {
 
 .prod:hover {
     box-shadow: 0 0 20px var(--mainViolett);
-    bottom: 15px;
 }
 
 .examples-ex2 {
